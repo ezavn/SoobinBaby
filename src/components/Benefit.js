@@ -19,7 +19,6 @@ export default function Benefit() {
       <div
         className="md:block hidden absolute top-[60%] xl:top-[50%] translate-y-[-50%] right-0"
         data-aos="fade-left"
-        data-aos-offset="300"
       >
         <img
           className="absolute h-auto top-[70px] right-[105px] xl:right-[30px] w-[200px] xl:w-[400px]"
@@ -60,32 +59,42 @@ export default function Benefit() {
             dành cho trẻ
           </h2>
           <p
-            className="text-grey leading-[2] max-w-[810px] my-[20px] lg:my-[40px]"
+            className="text-black leading-[2] max-w-[810px] mt-[20px] lg:mt-[40px]"
             data-aos="fade-up"
           >
-            Với tình hình thời tiết thất thường, dịch cúm, cảm ho sổ mũi khiến
-            sức khoẻ các bé bị ảnh hưởng, mệt mỏi uể oải làm cho ba mẹ lo lắng,
-            nước hồng sâm Baby Smart Up là giải pháp giải quyết các âu lo của
-            phụ huynh muốn bồi bổ cho con, với các lợi ích sau:
+            Trẻ em từ 2 đến 13 tuổi là giai đoạn quan trọng, cần được bổ sung
+            dinh dưỡng và tăng cường sức khỏe để phát triển thể chất. Một trong
+            những phương phát tự nhiên và hiệu quả để hỗ trợ các bậc phụ huynh
+            trong giai đoạn này là sử dụng hồng sâm Baby Smart Up dành cho trẻ
+            em.
+          </p>
+          <p
+            className="text-black leading-[2] max-w-[810px] mt-[10px] mb-[20px] lg:mb-[40px]"
+            data-aos="fade-up"
+          >
+            Hồng sâm Baby là một sản phẩm tự nhiên được chiết xuất từ củ hồng
+            sâm tươi ngon. Với những đặc điểm riêng biệt và công thức chăm sóc
+            đặc biệt cho trẻ em, hồng sâm Baby mang lại nhiều lợi ích cho sức
+            khỏe cho trẻ trong giai đoạn từ 2 - 13 tuổi, cụ thể:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[35px]">
             <BenefitItem
               img="./images/sb-benefit1.svg"
-              title="Phát triển trí não"
+              title="Bổ sung dinh dưỡng"
             >
-              Trong thành phần của nước hồng sâm Baby, ngoài thành phần chính là
-              hồng sâm 6 năm tuổi còn bổ sung thêm các loại vitamin, khoáng chất
-              cùng các dược liệu đông y, giúp trẻ có đầy đủ năng lượng và phát
-              triển trí tuệ.
+              Cung cấp một lượng lớn dưỡng chất quan trọng như vitamin, khoáng
+              chất và các thành phần quý giá khác. Điều này giúp bổ sung những
+              chất cần thiết cho sự phát triển cơ bắp, xương khớp và hệ thần
+              kinh của trẻ.
             </BenefitItem>
             <BenefitItem
               img="./images/sb-benefit2.svg"
               title="Tăng sức đề kháng"
             >
-              Sử dụng liên tục trong vòng 3 tháng, mỗi năm khoảng 2-3 lần ( tùy
-              nhu cầu sức khỏe của bé ), giúp các bé không bị cảm cúm, ốm vặt,
-              ho, sổ mũi hoặc nếu có bị thì thời gian cảm cúm cũng ngắn hơn và
-              nhanh khỏi hơn.
+              Hồng sâm Baby chứa các chất chống oxy hóa và kháng vi khuẩn tự
+              nhiên. Điều này giúp tăng cường hệ miễn dịch của trẻ, bảo vệ cơ
+              thể khỏi các tác nhân gây bệnh và tăng cường khả năng chống lại
+              các bệnh truyền nhiễm.
             </BenefitItem>
             <BenefitItem
               img="./images/sb-benefit3.svg"
@@ -107,9 +116,10 @@ export default function Benefit() {
               img="./images/sb-benefit5.svg"
               title="Giảm mệt mỏi, tăng cường thể lực"
             >
-              Tác dụng tuần hoàn máu, tăng hồng cầu giúp các bé hiếu động hoặc
-              chịu cường độ học tập cao nhanh chóng hồi phục sức khỏe, giảm căng
-              thẳng mệt mỏi.
+              Hồng sâm Baby giúp cải thiện năng lượng và sự tỉnh táo cho trẻ.
+              Các thành phần tự nhiên trong hồng sâm giúp tăng cường tuần hoàn
+              máu và cung cấp năng lượng cho cơ thể. Điều này giúp trẻ tỉnh táo,
+              tập trung và có hiệu suất cao trong hoạt động hàng ngày.
             </BenefitItem>
           </div>
         </div>

@@ -11,8 +11,8 @@ export default function Market() {
           className="font-black text-white text-[24px] md:text-[38px] lg:text-[48px] xl:text-[55px] leading-[1.2] uppercase text-center"
           data-aos="fade-down"
         >
-          Siêu thị Sâm Soobin <br className="block xl:hidden" /> – Nhân Sâm Việt
-          Hàn
+          Nhân Sâm Việt Hàn <br className="block xl:hidden" /> – Siêu thị Sâm
+          Soobin
         </h2>
         <p
           className="text-[18px] md:text-[20px] lg:text-[30px] font-bold text-white mb-[30px] lg:mb-[50px] text-center"
