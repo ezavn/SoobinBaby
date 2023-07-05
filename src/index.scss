@@ -1,0 +1,509 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// background-image: linear-gradient(to right, #4eb9db, #014e95) !important;
+// bg-[url('../public/images/abc.png')] bg-center bg-no-repeat bg-cover
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+    @apply font-nunito;
+    font-weight: 400;
+    line-height: 1.6;
+    @apply text-black;
+  }
+}
+
+@layer components {
+  .page-container {
+    max-width: 1235px;
+    @apply mx-auto;
+  }
+  @media (max-width: 1024px) {
+    .page-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  @apply font-nunito;
+  font-weight: 800;
+  height: 100%;
+  li {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    @apply text-white;
+    text-transform: uppercase;
+    padding: 0 15px;
+    transition: all 0.2s ease-in;
+    &.active {
+      border-top: 3px solid #fff;
+      background: rgba(#fff, 0.11);
+    }
+    &:hover {
+      background: rgba(#fff, 0.11);
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  &.--main {
+    @apply bg-yellow;
+    @apply text-black;
+  }
+  &.--second {
+    @apply bg-black;
+    @apply text-white;
+  }
+  &.--third {
+    @apply bg-green;
+    @apply text-yellow;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  span {
+    @apply font-nunito;
+    font-weight: 700;
+  }
+}
+
+// Button animation
+.buttons {
+  margin-top: 60px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+$red: #e81207;
+$yellow: #f29c1f;
+$dark: #ffffff;
+$borderW: 2px;
+
+.blob-btn {
+  display: inline-block;
+  $numOfBlobs: 4;
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+
+  &:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: $borderW solid $red;
+    border-radius: 30px;
+  }
+
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: $borderW * 1.5;
+    top: $borderW * 1.5;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+
+  &:hover {
+    color: $dark;
+    border-radius: 30px;
+
+    &:after {
+      transition: all 0.3s;
+      left: 0;
+      top: 0;
+      border-radius: 30px;
+    }
+  }
+
+  &__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+
+  &__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+  }
+
+  &__blob {
+    position: absolute;
+    top: $borderW;
+    width: 100% / $numOfBlobs;
+    height: 100%;
+    background: $red;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+
+    @supports (filter: url("#goo")) {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+
+    @for $i from 1 through $numOfBlobs {
+      &:nth-child(#{$i}) {
+        left: ($i - 1) * (120% / $numOfBlobs);
+        transition-delay: ($i - 1) * 0.08s;
+      }
+    }
+
+    .blob-btn:hover & {
+      transform: translateZ(0) scale(1.7);
+
+      @supports (filter: url("#goo")) {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+  }
+}
+
+.blob-btn2 {
+  display: inline-block;
+  $numOfBlobs: 4;
+  z-index: 1;
+  position: relative;
+  padding: 20px 46px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $yellow;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+
+  &:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: $borderW solid $yellow;
+    border-radius: 30px;
+  }
+
+  &:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: $borderW * 1.5;
+    top: $borderW * 1.5;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+  }
+
+  &:hover {
+    color: $dark;
+    border-radius: 30px;
+
+    &:after {
+      transition: all 0.3s;
+      left: 0;
+      top: 0;
+      border-radius: 30px;
+    }
+  }
+
+  &__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+  }
+
+  &__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+  }
+
+  &__blob {
+    position: absolute;
+    top: $borderW;
+    width: 100% / $numOfBlobs;
+    height: 100%;
+    background: $yellow;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+
+    @supports (filter: url("#goo")) {
+      transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+
+    @for $i from 1 through $numOfBlobs {
+      &:nth-child(#{$i}) {
+        left: ($i - 1) * (120% / $numOfBlobs);
+        transition-delay: ($i - 1) * 0.08s;
+      }
+    }
+
+    .blob-btn2:hover & {
+      transform: translateZ(0) scale(1.7);
+
+      @supports (filter: url("#goo")) {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+  }
+}
+
+.benefit-slide .slick-prev:before,
+.benefit-slide .slick-next:before {
+  font-size: 0px;
+}
+
+.benefit-slide .slick-prev,
+.benefit-slide .slick-next {
+  width: 58px;
+  height: 48px;
+  z-index: 20;
+}
+
+.benefit-slide .slick-prev {
+  left: -70px;
+}
+
+.benefit-slide .slick-next {
+  right: -55px;
+}
+
+@media (max-width: 1024px) {
+  .buttons {
+    text-align: left;
+  }
+  .nav-menu {
+    li {
+      padding: 0 10px;
+    }
+  }
+  .btn {
+    span {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-menu {
+    z-index: 999;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    @apply bg-red;
+    align-items: center;
+    li {
+      border-right: none;
+      height: unset;
+      &.active {
+        border-top: 3px solid #ffffff;
+        background: rgba(255, 255, 255, 0.11);
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.11);
+      }
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+    }
+  }
+  .nav-menu.active {
+    left: 0px;
+  }
+
+  .benefit-slide .slick-prev,
+  .benefit-slide .slick-next {
+    width: 38px;
+    height: 28px;
+  }
+  .benefit-slide .slick-prev {
+    left: 0px;
+  }
+
+  .benefit-slide .slick-next {
+    right: 0px;
+  }
+}
+
+// Animation
+.phone-ring {
+  animation: ring 2s ease infinite;
+}
+
+@keyframes ring {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  2% {
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  4% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  6% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  8% {
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+  10% {
+    -webkit-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+  12% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  14% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  18% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+// Custom AOS
+[data-aos="part1"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateX(300px) translateY(100px) scale(0.3);
+
+  &.aos-animate {
+    transform: translateX(0) translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+[data-aos="part2"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateX(200px) translateY(-100px) scale(0.3);
+
+  &.aos-animate {
+    transform: translateX(0) translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+[data-aos="part3"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateX(-300px) translateY(0) scale(0.3);
+
+  &.aos-animate {
+    transform: translateX(0) translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
