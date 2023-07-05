@@ -25,15 +25,11 @@ export default function Benefit() {
           className="absolute top-[70px] right-[105px] xl:right-[30px] w-[200px] xl:w-[400px]"
           srcSet="./images/sb-benefitbg1.png 2x"
           alt=""
-          data-aos="zoom-in-up"
-          data-aos-delay="300"
         />
         <img
           className="absolute top-[150px] xl:top-[180px] right-[30px] w-[180px] xl:w-[380px]"
           srcSet="./images/sb-benefitbg2.png 2x"
           alt=""
-          data-aos="zoom-in-left"
-          data-aos-delay="300"
         />
         <img
           className="w-[280px] xl:w-[500px]"
