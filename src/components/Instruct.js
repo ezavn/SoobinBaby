@@ -73,7 +73,7 @@ export default function Instruct() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1800"
           >
-            <div className="flex flex-col justify-center items-center rounded-[70px] border border-dashed border-white lg:pt-[68px] pt-[38px] pb-[40px] lg:pb-[80px] px-[10px] h-full">
+            <div className="flex flex-col justify-center items-center rounded-[70px] border border-dashed border-white lg:pt-[68px] pt-[38px] pb-[40px] lg:pb-[80px] px-[10px] lg:px-0 h-full">
               <div className="mb-[50px] md:mb-[100px] lg:mb-[150px]">
                 <img
                   className="w-[260px] lg:w-auto"
