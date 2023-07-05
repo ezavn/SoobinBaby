@@ -22,13 +22,13 @@ export default function Benefit() {
         data-aos-offset="300"
       >
         <img
-          className="absolute top-[70px] right-[105px] xl:right-[30px] w-[200px] xl:w-[400px]"
-          srcSet="./images/sb-benefitbg1.png 2x"
+          className="absolute h-auto top-[70px] right-[105px] xl:right-[30px] w-[200px] xl:w-[400px]"
+          srcSet="./images/sb-be1.png 2x"
           alt=""
         />
         <img
-          className="absolute top-[150px] xl:top-[180px] right-[30px] w-[180px] xl:w-[380px]"
-          srcSet="./images/sb-benefitbg2.png 2x"
+          className="absolute h-auto top-[150px] xl:top-[180px] right-[30px] w-[180px] xl:w-[380px]"
+          srcSet="./images/sb-be2.png 2x"
           alt=""
         />
         <img
