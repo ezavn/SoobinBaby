@@ -64,7 +64,7 @@ export default function Benefit() {
           >
             Trẻ em từ 2 đến 13 tuổi là giai đoạn quan trọng, cần được bổ sung
             dinh dưỡng và tăng cường sức khỏe để phát triển thể chất. Một trong
-            những phương phát tự nhiên và hiệu quả để hỗ trợ các bậc phụ huynh
+            những phương pháp tự nhiên và hiệu quả để hỗ trợ các bậc phụ huynh
             trong giai đoạn này là sử dụng hồng sâm Baby Smart Up dành cho trẻ
             em.
           </p>
@@ -74,8 +74,8 @@ export default function Benefit() {
           >
             Hồng sâm Baby là một sản phẩm tự nhiên được chiết xuất từ củ hồng
             sâm tươi ngon. Với những đặc điểm riêng biệt và công thức chăm sóc
-            đặc biệt cho trẻ em, hồng sâm Baby mang lại nhiều lợi ích cho sức
-            khỏe cho trẻ trong giai đoạn từ 2 - 13 tuổi, cụ thể:
+            đặc biệt, hồng sâm Baby mang lại nhiều lợi ích cho sức khỏe cho trẻ
+            trong giai đoạn từ 2 - 13 tuổi, cụ thể:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[35px]">
             <BenefitItem
