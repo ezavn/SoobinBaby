@@ -38,25 +38,25 @@ export default function Why() {
       </div>
       <div className="max-w-[1440px] mx-auto px-[15px] md:px-[20px] xl:px-0">
         <h2
-          className="font-extrabold text-[24px] md:text-[38px] lg:text-[48px] xl:text-[55px] text-black leading-[1.2] capitalize mb-[20px] lg:mb-[40px] text-center"
+          className="font-extrabold text-[24px] md:text-[38px] lg:text-[48px] xl:text-[55px] text-black leading-[1.3] capitalize mb-[20px] lg:mb-[40px] text-center"
           data-aos="fade-down"
         >
-          Tại sao bạn nên mua sản phẩm <br className="hidden md:block" />
+          Tại sao bạn nên mua <br className="hidden md:block" />
           <span className="text-lightYellow">
             NƯỚC HỒNG SÂM BABY SMART UP
           </span>{" "}
           <br className="hidden md:block" />
-          tại Siêu thị Sâm Soobin?
+          NHÂN SÂM VIỆT HÀN - SIÊU THỊ SÂM SOOBIN?
         </h2>
         <p
           className="text-[15px] font-extrabold text-black text-justify md:text-center max-w-[1000px] mx-auto md:px-[40px] lg:px-0"
           data-aos="fade-up"
         >
-          Sản phẩm NƯỚC HỒNG SÂM BABY SMART UP được Siêu thị Sâm Soobin phân
-          phối và nhập khẩu chính hãng tại Hàn Quốc.Siêu thị Sâm Soobin – Nhân
-          Sâm Việt Hàn tự hào là một trong những doanh nghiệp đầu tiên đưa các
-          sản phẩm chăm sóc sức khỏe xuất xứ từ Hàn Quốc đến với người tiêu dùng
-          Việt.
+          Sản phẩm NƯỚC HỒNG SÂM BABY SMART UP Nhân sâm Việt Hàn - Siêu thị Sâm
+          Soobin phân phối và nhập khẩu chính hãng tại Hàn Quốc. Nhân sâm Việt
+          Hàn - Siêu thị Sâm Soobin tự hào là một trong những doanh nghiệp đầu
+          tiên đưa các sản phẩm chăm sóc sức khỏe xuất xứ từ Hàn Quốc đến với
+          người tiêu dùng Việt.
         </p>
         <p
           className="font-birth text-[36px] text-center mt-[20px] mb-[30px] lg:mt-[30px] lg:mb-[40px]"
