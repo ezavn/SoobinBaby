@@ -68,17 +68,17 @@ export default function Why() {
           <WhyItem
             num="./images/why-num1.png 2x"
             img="./images/why-shape1.svg"
-            content="Tất cả sản phẩm của Siêu thị Sâm Soobin phân phối đều được nhập khẩu chính hãng tại Hàn Quốc"
+            content="Tất cả sản phẩm của Siêu thị Sâm Soobin phân phối đều được nhập khẩu chính hãng tại Hàn Quốc."
           ></WhyItem>
           <WhyItem
             num="./images/why-num2.png 2x"
             img="./images/why-shape2.svg"
-            content="Các sản phẩm Siêu thị Sâm Soobin đều có công bố của Bộ Y Tế"
+            content="Các sản phẩm Siêu thị Sâm Soobin đều có công bố của Bộ Y Tế."
           ></WhyItem>
           <WhyItem
             num="./images/why-num3.png 2x"
             img="./images/why-shape3.svg"
-            content="Cam kết mang đến cho quý khách hàng sản phẩm chất lượng với giá thành phù hợp nhất"
+            content="Cam kết mang đến cho quý khách hàng sản phẩm chất lượng với giá thành phù hợp nhất."
           ></WhyItem>
           <WhyItem
             num="./images/why-num4.png 2x"

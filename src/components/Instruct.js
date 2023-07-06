@@ -82,9 +82,9 @@ export default function Instruct() {
                 />
               </div>
               <p className="font-black text-center lg:px-[30px]">
-                – Dùng vào buổi sáng hoặc trưa,trước hoặc sau khi ăn 30 phút{" "}
+                – Dùng vào buổi sáng hoặc trưa,trước hoặc sau khi ăn 30 phút.{" "}
                 <br /> – Nên dùng trước khi ăn vì bụng rỗng dễ hấp thu{" "}
-                <br className="hidden lg:block" /> chất dinh dưỡng hơn <br /> –
+                <br className="hidden lg:block" /> chất dinh dưỡng hơn. <br /> –
                 Có thể để tủ lạnh dùng nếu bé thích uống lạnh.
               </p>
             </div>
