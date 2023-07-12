@@ -99,6 +99,21 @@ export default function Ginseng() {
             </GinsengItem>
           </div>
         </div>
+        <div className="text-center mt-[40px] lg:mt-0">
+          <a
+            className="contact-button"
+            href="http://m.me/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="w-[40px]"
+              src="./icons/phone-white-icon.svg"
+              alt=""
+            />
+            <span>HỖ TRỢ TƯ VẤN</span>
+          </a>
+        </div>
         <div className="h-[62px]">
           <div
             class="buttons !text-center !mt-[30px] md:mt-[60px]"
