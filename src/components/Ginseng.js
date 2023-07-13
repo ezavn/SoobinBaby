@@ -102,7 +102,7 @@ export default function Ginseng() {
         <div className="text-center mt-[40px] lg:mt-0">
           <a
             className="contact-button"
-            href="http://m.me/"
+            href="http://m.me/100062932646413"
             target="_blank"
             rel="noreferrer"
           >

@@ -2,8 +2,23 @@ import React from "react";
 
 export default function Instruct() {
   return (
-    <section className="relative pt-[140px] md:pt-[250px] lg:pt-[340px] xl:pt-[470px] pb-sectionMB md:pb-section">
-      <div className="absolute top-[-80px] right-[5px] md:top-[-125px] md:right-[10px] lg:top-[-160px] lg:right-[50px] xl:top-[-320px] xl:right-[60px]">
+    <section className="relative pt-[140px] md:pt-[250px] lg:pt-[300px] xl:pt-[470px] pb-sectionMB md:pb-section">
+      <div className="absolute top-[-80px] right-[5px] md:top-[-125px] md:right-[10px] lg:top-[-160px] lg:right-[30px] xl:top-[-320px] xl:right-[40px]">
+        <div className="xl:block hidden absolute bottom-[80px] right-[80px] z-10">
+          <a
+            className="contact-button"
+            href="http://m.me/100062932646413"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="w-[40px]"
+              src="./icons/phone-white-icon.svg"
+              alt=""
+            />
+            <span>HỖ TRỢ TƯ VẤN</span>
+          </a>
+        </div>
         <img
           className="w-[220px] md:w-[380px] lg:w-[500px] xl:w-[900px]"
           srcSet="./images/ins4.png 2x"
@@ -22,6 +37,21 @@ export default function Instruct() {
         />
       </div>
       <div id="instruct" className="pt-[30px] page-container">
+        <div className="block text-center xl:hidden mb-[80px]">
+          <a
+            className="contact-button"
+            href="http://m.me/100062932646413"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="w-[40px]"
+              src="./icons/phone-white-icon.svg"
+              alt=""
+            />
+            <span>HỖ TRỢ TƯ VẤN</span>
+          </a>
+        </div>
         <h2
           className="font-extrabold text-[24px] md:text-[38px] lg:text-[48px] xl:text-[55px] text-black leading-[1.2] uppercase mb-[15px] xl:mb-[30px] text-center"
           data-aos="fade-down"
